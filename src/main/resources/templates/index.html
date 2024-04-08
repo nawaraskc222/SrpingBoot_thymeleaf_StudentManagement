@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
@@ -37,9 +36,9 @@
 <td>
 
 
-<!-- th:href="@{/student-update/{id}(id=${student.id})}" -->
 
-<a href="#"   class="btn btn-success">Edit</a>
+
+<a href="#"   th:href="@{/student-update/{id}(id=${student.id})}"  class="btn btn-success">Edit</a>
 <a href="#" th:href="@{/student-delete/{id}(id=${student.id})}" class="btn btn-danger">Delete</a>
 </td>
 
