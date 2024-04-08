@@ -43,4 +43,25 @@ public class StudentController {
 		return "redirect:/";
 	}
 	
+//	@GetMapping("")
+//	public String editStudent(Model model,@PathVariable("id") Integer id) {
+//		
+//		Student student=service.getById(id);
+//		model.addAttribute("student",student);
+//		
+//		return null;
+//	}
+	
+	
+	@GetMapping("/student-delete/{id}")
+	public String deleteStudent(Model model,@PathVariable("id") Integer id) {
+		Student student=service.getById(id);
+		service.delete(student);
+		
+		return "redirect:/";
+	}
+	
+	
+	
+	
 }

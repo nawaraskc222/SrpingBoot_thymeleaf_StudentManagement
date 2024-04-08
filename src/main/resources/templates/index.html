@@ -36,8 +36,11 @@
 
 <td>
 
-<a href="#"  class="btn btn-success">Edit</a>
-<a href="#"  class="btn btn-danger">Delete</a>
+
+<!-- th:href="@{/student-update/{id}(id=${student.id})}" -->
+
+<a href="#"   class="btn btn-success">Edit</a>
+<a href="#" th:href="@{/student-delete/{id}(id=${student.id})}" class="btn btn-danger">Delete</a>
 </td>
 
 </tr>
