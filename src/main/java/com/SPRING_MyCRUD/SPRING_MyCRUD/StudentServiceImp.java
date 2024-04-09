@@ -6,17 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StudentImplementation implements StudentService{
-
+public class StudentServiceImp implements StudentService{
 	@Autowired
-	StudentRepository repo;
-	
+	StudentRepository repo;	
 	@Override
 	public void save(Student student) {
-		// TODO Auto-generated method stub
-		
-		repo.save(student);
-		
+		// TODO Auto-generated method stub		
+		repo.save(student);		
 	}
 
 	@Override
@@ -33,8 +29,7 @@ public class StudentImplementation implements StudentService{
 
 	@Override
 	public void delete(Student student) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub		
 		repo.delete(student);
 		
 	}

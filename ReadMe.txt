@@ -9,3 +9,11 @@ INSERT INTO NAWARAS_STUDENT (name, email) VALUES
 ('Sophia Wilson', 'sophia@example.com');
 
 
+
+https://github.com/nawaraskc222/SrpingBoot_thymeleaf_StudentManagement.git
+
+
+
+
+***imp 
+Student management
